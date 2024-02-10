@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
     <script>
         function rain() {
-            let amount = 60;
+            let amount = 70;
             let body = document.querySelector('body');
             let i = 0;
             while (i < amount) {
                 let drop = document.createElement('i');
-                let size = Math.random() * 5;
+                let size = Math.random() * 7;
                 let posX = Math.floor(Math.random() * window.innerWidth);
                 let delay = Math.random() * -20;
                 let duration = Math.random() * 5;
 
-                drop.style.width = 0.2 + size + 'px';
+                drop.style.width = 0.9 + size + 'px';
                 drop.style.left = posX + 'px';
                 drop.style.animationDelay = delay + 's';
-                drop.style.animationDuration = 1 + duration + 's';
+                drop.style.animationDuration = 9 + duration + 's';
 
                 body.append(drop);
                 i++;
@@ -30,5 +36,24 @@
 
         rain();
     </script>
+
+    <div id="nav-bar">
+        <h2>Welcome to my <span class="teal-text">Portfolio</span></h2>
+        <ul>
+            <li id="projects-btn"><a href="#projects">Projects</a></li>
+            <li><a href="#abt-me">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="info">
+        <div id="intro">
+            <h2>Hi, I am</h2>
+            <h1>Pirko Vichmann</h1>
+            <h2> and I am currently studying <br>
+                <span class="pink-text">Software Development</span>
+            </h2>
+        </div>
+    </div>
 </body>
 </html>

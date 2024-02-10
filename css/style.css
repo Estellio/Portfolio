@@ -8,6 +8,7 @@ body {
     background: #000;
     overflow: hidden;
     height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 i {
@@ -17,18 +18,19 @@ i {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     animation: animate 10s linear infinite;
+    z-index: -1;
 }
 
 i:nth-child(3n+1) {
-    background: linear-gradient(transparent, #ff00ff);
+    background: linear-gradient(transparent, #f9d1ae);
 }
 
 i:nth-child(3n+2) {
-    background: linear-gradient(transparent, #00ff00);
+    background: linear-gradient(transparent, #ea3f8c);
 }
 
 i:nth-child(3n+3) {
-    background: linear-gradient(transparent, #00ffff);
+    background: linear-gradient(transparent, #3cc18e);
 }
 
 @keyframes animate {
@@ -44,4 +46,87 @@ i:nth-child(3n+3) {
         -moz-transform: translateY(calc(100vh + 200px));
         -o-transform: translateY(calc(100vh + 200px));
     }
+}
+
+#nav-bar {
+    top:0;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(#000000, #222222);
+}
+
+#nav-bar ul {
+    position: absolute;
+    right: 130px;
+    display: inline-block;
+    flex-wrap: nowrap;
+    height: 50px;
+    margin-top: 14px;
+}
+
+#nav-bar li {
+    display: inline-block;
+    margin: 0 35px;
+    padding: 14px;
+}
+
+#nav-bar a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+#nav-bar h2 {
+    display: inline-block;
+    color: #f5f5f5;
+    margin-left: 50px;
+    margin-top: 28px;
+}
+
+#projects-btn {
+    background-image: linear-gradient(to right, #ea3f8c, #e81c67);
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+#projects-btn:hover {
+    background-image: linear-gradient(to right, #3cc18e, #00806f);
+    color: #000000;
+}
+
+#info {
+    height: 400px;
+    width: 700px;
+    background: rgba(34, 34, 34, 0.8);
+    border: 1px solid transparent;
+    border-radius: 55px;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
+#intro {
+    margin-top: 70px;
+    margin-left: 80px;
+}
+
+#info h1 {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #3cc18e;
+    font-size: 4.6em;
+    margin-left: -4px;
+}
+
+#info h2 {
+    color: #ffffff;
+    font-size: 1.7em;
+    line-height: 145%;
+}
+
+.pink-text {
+    color: #d24787;
+}
+
+.teal-text {
+    color: #40d69d;
 }
