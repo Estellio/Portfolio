@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My Projects</title>
+    <script src="rain_bg.js"></script>
+    <link rel="stylesheet" href="css/style(rain_bg).css">
     <link rel="stylesheet" href="css/style(projects).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
+<script>
+    rain();
+</script>
 
     <div id="nav-bar">
         <a href="index.html">
@@ -16,10 +21,42 @@
         </a>
         <ul>
             <li id="projects-btn"><a href="my-projects.html">Projects</a></li>
-            <li><a href="about-me.html">About Me</a></li>
-            <li><a href="about-me.html">Contact</a></li>
+            <li><a class="underline" href="about-me.html">About Me</a></li>
+            <li><a class="underline" href="about-me.html">Contact</a></li>
         </ul>
     </div>
 
+    <div id="projects">
+        <div class="project">
+            <h2>PHP Mailer</h2>
+            <h3><span class="pink-text bold">Programming languages:</span> PHP, HTML & CSS</h3>
+            <p>This is a page, where you can send New Year's greetings to others via gmail. Just type in their e-post address, greeting, their name and press Submit. Everything that is sent is also stored in a database.</p>
+            <a class="pink-text" href="https://vichmannpirko.ikt.khk.ee/php_mail/" target="_blank">Click here to try</a>
+        </div>
+        <div class="project">
+            <h2>Baltic Games 2024</h2>
+            <h3><span class="teal-text bold">Programming languages:</span> JS, HTML & CSS</h3>
+            <p>This page was created during a school competition. We were given a design file in Figma and had to implement it into a functioning website. We had 12 hours to do it in a team of 3. Sadly we didn't have enough time in the end, so the schedule section of the page is unfinished.</p>
+            <a class="teal-text" href="" target="_blank">Click here to try</a>
+        </div>
+        <div class="project">
+            <h2>Weather API</h2>
+            <h3><span class="pink-text bold">Programming languages:</span> JS, HTML & CSS</h3>
+            <p>This page shows you the current weather anywhere around the world. Just type in the city name you want to know about and it will show the current weather coditions there.</p>
+            <a class="pink-text" href="" target="_blank">Click here to try</a>
+        </div>
+        <div class="project">
+            <h2>Hotell Website</h2>
+            <h3><span class="teal-text bold">Programming languages:</span> HTML & CSS</h3>
+            <p>This was the 1st page I made at school from scratch with HTML and CSS. The teacher gave us instructions to follow but there were still some parts that didn't want to work immediately.</p>
+            <a class="teal-text" href="https://vichmannpirko.ikt.khk.ee/veebiarendus/hotell/index.html" target="_blank">Click here to try</a>
+        </div>
+        <div class="project">
+            <h2>Books project/Calories</h2>
+            <h3><span class="pink-text bold">Programming languages:</span></h3>
+            <p></p>
+            <a class="pink-text" href="" target="_blank">Click here to try</a>
+        </div>
+    </div>
 </body>
 </html>

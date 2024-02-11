@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <script src="rain_bg.js"></script>
+    <link rel="stylesheet" href="css/style(rain_bg).css">
     <link rel="stylesheet" href="css/style(index).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +16,6 @@
 </head>
 <body>
     <script>
-        function rain() {
-            let amount = 70;
-            let body = document.querySelector('body');
-            let i = 0;
-            while (i < amount) {
-                let drop = document.createElement('i');
-                let size = Math.random() * 7;
-                let posX = Math.floor(Math.random() * window.innerWidth);
-                let delay = Math.random() * -20;
-                let duration = Math.random() * 5;
-
-                drop.style.width = 0.9 + size + 'px';
-                drop.style.left = posX + 'px';
-                drop.style.animationDelay = delay + 's';
-                drop.style.animationDuration = 9 + duration + 's';
-
-                body.append(drop);
-                i++;
-            }
-        }
-
         rain();
     </script>
 
@@ -44,8 +25,8 @@
         </a>
         <ul>
             <li id="projects-btn"><a href="my-projects.html">Projects</a></li>
-            <li><a href="about-me.html">About Me</a></li>
-            <li><a href="about-me.html">Contact</a></li>
+            <li><a  class="underline" href="about-me.html">About Me</a></li>
+            <li><a class="underline" href="about-me.html">Contact</a></li>
         </ul>
     </div>
 
@@ -57,7 +38,7 @@
                 <span class="pink-text">Software Development</span>
             </h2>
             <div id="more-btn">
-                <a id="read-more" href="#abt-me">More about Me<i class="fa-solid fa-chevron-right"></i></a>
+                <a id="read-more" href="about-me.html">More about Me <i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </div>
     </div>
