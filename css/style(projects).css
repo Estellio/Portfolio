@@ -84,11 +84,13 @@ a {
 
 #projects {
     display: block;
+    height: 100%;
+    padding-bottom: 60px;
 }
 
 .project {
-    margin: 35px auto;
-    width: 770px;
+    margin: 45px auto 0px auto;
+    width: 780px;
     height: auto;
     border: 2px solid #222222;
     border-radius: 50px;

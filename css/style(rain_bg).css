@@ -6,6 +6,7 @@
     border-bottom-right-radius: 5px;
     animation: animate 10s linear infinite;
     z-index: -10;
+    top: 0;
 }
 
 .rain:nth-child(3n+1) {

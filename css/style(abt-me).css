@@ -6,9 +6,10 @@
 
 body {
     background: #000;
-    overflow: hidden;
-    height: 100vh;
     font-family: 'Comfortaa', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    color: #ffffff;
 }
 
 #nav-bar {
@@ -73,4 +74,43 @@ body {
 
 .teal-text {
     color: #40d69d;
+}
+
+img {
+    display: block;
+    height: 130px;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile {
+    position: relative;
+    width: 840px;
+    border-radius: 45px;
+    background-image: linear-gradient(#000000, #222222);
+    border: 2px solid #222222;
+    margin: 120px auto;
+}
+
+#basics h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+#basics p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#fun-facts {
+    margin: 50px;
+    border: #ea3f8c;
+    height: 100px;
+    line-height: 1.7;
+}
+
+#fun-facts h3 {
+    margin-bottom: 10px;
 }
