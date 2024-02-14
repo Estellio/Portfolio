@@ -13,7 +13,7 @@ function rain() {
         let delay = Math.random() * -20;
         let duration = Math.random() * 5;
 
-        drop.style.width = 1.2 + size + 'px';
+        drop.style.width = 1.5 + size + 'px';
         drop.style.left = posX + 'px';
         drop.style.animationDelay = delay + 's';
         drop.style.animationDuration = 9 + duration + 's';

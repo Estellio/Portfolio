@@ -10,6 +10,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     color: #ffffff;
+    height: auto;
 }
 
 a {
@@ -90,7 +91,8 @@ a {
 
 .project {
     margin: 45px auto 0px auto;
-    width: 780px;
+    max-width: 780px;
+    min-width: 500px;
     height: auto;
     border: 2px solid #222222;
     border-radius: 50px;
