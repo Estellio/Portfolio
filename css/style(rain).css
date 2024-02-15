@@ -1,6 +1,6 @@
 .rain {
     position: absolute;
-    height: 200px;
+    height: 150px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     animation: animate 10s linear infinite;
@@ -9,7 +9,7 @@
 }
 
 .rain:nth-child(3n+1) {
-    background: linear-gradient(transparent, #c9eb3f);
+    background: linear-gradient(transparent, #8cfe48);
 }
 
 .rain:nth-child(3n+2) {

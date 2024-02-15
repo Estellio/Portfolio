@@ -112,12 +112,23 @@ body {
     text-decoration: none;
     color: #000000;
     padding: 15px;
-    background-color: #c9eb3f;
+    background-color: #8cfe48;
     border-radius: 10px;
     font-size: 1.2em;
     font-weight: bold;
 }
 
 #read-more:hover {
-    background-color: #9bcc14;
+    background-color: #73fe1f;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #222222;
+    height: 25px;
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0;
 }

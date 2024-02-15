@@ -75,6 +75,12 @@ a {
     background-color: #c90c7d;
 }
 
+#header {
+    text-align: center;
+    margin-top: 90px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
 .pink-text {
     color: #ea3f8c;
 }
@@ -113,4 +119,52 @@ a {
 
 .bold {
     font-weight: bold;
+}
+
+#github a {
+    text-decoration: none;
+}
+
+#github {
+    width: 100%;
+    height: 200px;
+    background-color: #222222;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+#link a {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+#github i, #github a {
+    display: inline-block;
+}
+
+button {
+    background-color: #8cfe48;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin-top: 40px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 10px;
+    width: 160px;
+    height: 56px;
+}
+
+button:hover {
+    background-color: #73fe1f;
+}
+
+#footer {
+    text-align: center;
+    background-color: #222222;
+    height: 25px;
+    padding-top: 5px;
 }
