@@ -11,6 +11,10 @@ body {
     font-family: 'Comfortaa', sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
 #nav-bar {
     top:0;
     position: sticky;
