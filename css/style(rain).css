@@ -34,10 +34,10 @@
         opacity: 0.5;
     }
     100% {
-        -webkit-transform: translateY(120vh);
-        -ms-transform: translateY(120vh);
-        -moz-transform: translateY(120vh);
-        -o-transform: translateY(120vh);
+        -webkit-transform: translateY(calc(100vh + 200px));
+        -ms-transform: translateY(calc(100vh + 200px));
+        -moz-transform: translateY(calc(100vh + 200px));
+        -o-transform: translateY(calc(100vh + 200px));
         opacity: 0;
     }
 }
