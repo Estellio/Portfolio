@@ -1,8 +1,5 @@
 function rain() {
     let body = document.querySelector('body');
-    let html = document.documentElement;
-    const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-    console.log(height);
     let amount = 70;
     let i = 0;
     while (i < amount) {

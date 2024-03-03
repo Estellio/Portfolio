@@ -6,8 +6,8 @@
 
 body {
     background: #000;
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
     font-family: 'Comfortaa', sans-serif;
 }
 
@@ -45,7 +45,7 @@ a {
 
 #nav-bar ul {
     position: absolute;
-    right: 120px;
+    right: 122px;
     display: inline-block;
     flex-wrap: nowrap;
     height: 50px;
@@ -127,6 +127,17 @@ li a {
     color: #ffffff;
     font-size: 1.7em;
     line-height: 145%;
+}
+
+#projects-box {
+    margin-top: 80px;
+    margin-right: 130px;
+    background-image: linear-gradient(#000000, #222222);
+    border: 3px solid #222222;
+    border-radius: 60px;
+    height: 200px;
+    width: 740px;
+    float: right;
 }
 
 .pink-text {
