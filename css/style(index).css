@@ -148,6 +148,24 @@ li a {
     color: #40d69d;
 }
 
+#abt_me_btn {
+    display: flex;
+    background-color: #73fe1f;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 40px;
+    width: 220px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+#abt_me_btn i {
+    padding-left: 10px;
+}
+
 button {
     background-color: #8cfe48;
     color: inherit;
@@ -157,13 +175,6 @@ button {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: #73fe1f;
 }
 
 #footer {
@@ -175,4 +186,30 @@ button:hover {
     padding-top: 5px;
     position: fixed;
     bottom: 0;
+}
+
+@media only screen and (max-device-width: 580px) {
+    #info {
+        margin: 100px auto 0 auto;
+    }
+
+    #intro {
+        max-width: 780px;
+        min-width: 500px;
+        margin-right: 50px;
+    }
+
+    #intro h2 {
+        font-size: 2.2rem;
+    }
+
+    #intro h1 {
+        font-size: 5rem;
+    }
+
+    #abt_me_btn {
+        font-size: 1.7rem;
+        width: 280px;
+        height: 70px;
+    }
 }

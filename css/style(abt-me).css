@@ -241,3 +241,52 @@ a:hover {
     height: 25px;
     padding-top: 5px;
 }
+
+@media only screen and (max-device-width: 580px) {
+    #profile {
+        margin-top: 140px;
+    }
+
+    img {
+        height: 200px;
+        margin-top: -150px;
+    }
+
+    #basics h2 {
+        font-size: 2.3rem;
+    }
+
+    #basics p {
+        font-size: 1.5rem;
+    }
+
+    #fun-facts h3 {
+        font-size: 1.8rem;
+    }
+
+    #fun-facts p {
+        font-size: 1.6rem;
+    }
+
+    .box h2 {
+        font-size: 2.3rem;
+    }
+
+    #container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    #container .teal-text, #container .pink-text {
+        font-size: 1.8rem;
+    }
+
+    #container ul li {
+        font-size: 1.6rem;
+    }
+
+    #contact-info {
+        font-size: 1.6rem;
+    }
+}
