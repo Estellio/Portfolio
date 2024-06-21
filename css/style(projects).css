@@ -41,7 +41,9 @@ a {
 }
 
 #nav-bar {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top:0;
     position: sticky;
     height: 80px;
@@ -50,35 +52,23 @@ a {
     z-index: 100;
 }
 
-#nav-bar ul {
-    position: absolute;
-    right: 114px;
-    display: inline-block;
-    flex-wrap: nowrap;
-    height: 50px;
-    margin-top: 14px;
+#menu_icon {
+    display: none;
 }
 
-#nav-bar li {
-    display: inline-block;
-    margin: 0 35px;
-    padding: 14px;
+#homepage_btn a {
+    color: #f5f5f5;
+    margin-left: 60px;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 10px;
 }
 
-#nav-bar a {
-    text-decoration-line: none;
-    color: white;
-    font-size: 21px;
-    height: 100%;
-    width: 100%;
-}
-
-li a {
-    display: block;
-    position: relative;
-    text-decoration-line: none;
-    color: white;
-    font-size: 21px;
+#navigation_btns a {
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 50px;
 }
 
 .underline::after {
@@ -97,25 +87,6 @@ li a {
 .underline:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
-}
-
-#nav-bar h2 {
-    display: inline-block;
-    color: #f5f5f5;
-    margin-left: 60px;
-    margin-top: 28px;
-    font-size: 29px;
-}
-
-#projects-btn {
-    background-color: #c90c7d;
-    color: #ffffff;
-    border-radius: 10px;
-    letter-spacing: 1px;
-}
-
-#projects-btn:hover {
-    background-color: #c90c7d;
 }
 
 #header {
@@ -263,6 +234,17 @@ button:hover {
 }
 
 /* Phone CSS */
+
+/*
+@media only screen and (max-device-width: 880px) {
+    #menu_icon {
+        display: block;
+    }
+    #navigation_btns {
+        display: none;
+    }
+}
+*/
 
 @media only screen and (max-device-width: 500px) {
     #header {
