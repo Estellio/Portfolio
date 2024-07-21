@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Projects</title>
     <script src="rain_bg.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style(rain).css">
     <link rel="stylesheet" href="css/style(projects).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,59 +19,70 @@
 
     <div id="nav-bar">
         <div id="homepage_btn">
-            <a href="index.html">Welcome to my <span class="teal-text">Portfolio</span></a>
+            <a href="index.html"><span class="invisible">Welcome to my </span><span class="teal-text">Portfolio</span></a>
         </div>
-        <div id="navigation_btns">
+        <div id="navigation_btns" class="invisible">
             <a href="my-projects.html">Projects</a>
             <a href="about-me.html">About Me</a>
             <a href="about-me.html#contact">Contact</a>
         </div>
-        <i class="fa-solid fa-bars" id="menu_icon"></i>
+        <i class="fa-solid fa-bars fa-2xl" id="menu_icon"></i>
     </div>
+    <script>
+        const barsIcon = document.getElementById("menu_icon");
+        const navButtons = document.getElementById("navigation_btns");
 
-    <div id="header">
-        <h1>My Projects </h1>
-    </div>
+        barsIcon.addEventListener("click", () => {
+            navButtons.classList.toggle("active")
+            console.log("Klicked!")
+        });
+    </script>
 
-    <div id="projects">
-        <div class="project">
-            <h2>Paycheck generator</h2>
-            <h3><span class="teal-text bold">Programming languages:</span> PHP, HTML & CSS</h3>
-            <p>I got the opportunity to add a paycheck generator to a website with various other useful generators. This project also involved TCPDF, jQuery and SQLite.</p>
-            <div class="try-container">
-                <a class="teal-try-button" href="https://tehisjurist.ee/palgateatised/" target="_blank">Click here to try</a>
-            </div>
+    <div class="container_padding">
+        <div id="header">
+            <h1>My Projects </h1>
         </div>
-        <div class="project">
-            <h2>PHP Mailer</h2>
-            <h3><span class="pink-text bold">Programming languages:</span> PHP, HTML & CSS</h3>
-            <p>This is a page, where you can send New Year's greetings to others via gmail. Just type in their e-post address, greeting, their name and press Submit. Everything that is sent is also stored in a database.</p>
-            <div  class="try-container">
-                <a class="pink-try-button" href="https://vichmannpirko.ikt.khk.ee/php_mail/" target="_blank">Click here to try</a>
+
+        <div id="projects">
+            <div class="project">
+                <h2>Paycheck generator</h2>
+                <h3><span class="teal-text bold">Programming languages:</span> PHP, HTML & CSS</h3>
+                <p>I got the opportunity to add a paycheck generator to a website with various other useful generators. This project also involved TCPDF, jQuery and SQLite.</p>
+                <div class="try-container">
+                    <a class="teal-try-button" href="https://tehisjurist.ee/palgateatised/" target="_blank">Click here to try</a>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <h2>Baltic Games 2024</h2>
-            <h3><span class="teal-text bold">Programming languages:</span> JS, HTML & CSS</h3>
-            <p>This page was created during a school competition. We were given a design file in Figma and had to implement it into a functioning website. We had 12 hours to do it. Sadly that wasn't enough time in the end, so the page was unfinished.</p>
-            <div class="try-container">
-                <a class="teal-try-button" href="https://estellio.github.io/AastaTegija2024" target="_blank">Click here to try</a>
+            <div class="project">
+                <h2>PHP Mailer</h2>
+                <h3><span class="pink-text bold">Programming languages:</span> PHP, HTML & CSS</h3>
+                <p>This is a page, where you can send New Year's greetings to others via gmail. Just type in their e-post address, greeting, their name and press Submit. Everything that is sent is also stored in a database.</p>
+                <div  class="try-container">
+                    <a class="pink-try-button" href="https://vichmannpirko.ikt.khk.ee/php_mail/" target="_blank">Click here to try</a>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <h2>Weather API</h2>
-            <h3><span class="pink-text bold">Programming languages:</span> JS, HTML & CSS</h3>
-            <p>This page was made with OpenWeather API and shows you the current weather anywhere around the world. Just type in the city you want to know about, and it will show the current weather conditions there.</p>
-            <div class="try-container">
-                <a class="pink-try-button" href="https://estellio.github.io/weather/" target="_blank">Click here to try</a>
+            <div class="project">
+                <h2>Baltic Games 2024</h2>
+                <h3><span class="teal-text bold">Programming languages:</span> JS, HTML & CSS</h3>
+                <p>This page was created during a school competition. We were given a design file in Figma and had to implement it into a functioning website. We had 12 hours to do it. Sadly that wasn't enough time in the end, so the page was unfinished.</p>
+                <div class="try-container">
+                    <a class="teal-try-button" href="https://estellio.github.io/AastaTegija2024" target="_blank">Click here to try</a>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <h2>Books project</h2>
-            <h3><span class="teal-text bold">Programming languages:</span> JS & HTML</h3>
-            <p>On this page you can add books to a list. All the books are stored in local storage.</p>
-            <div class="try-container">
-                <a class="teal-try-button" href="https://estellio.github.io/oop_books/" target="_blank">Click here to try</a>
+            <div class="project">
+                <h2>Weather API</h2>
+                <h3><span class="pink-text bold">Programming languages:</span> JS, HTML & CSS</h3>
+                <p>This page was made with OpenWeather API and shows you the current weather anywhere around the world. Just type in the city you want to know about, and it will show the current weather conditions there.</p>
+                <div class="try-container">
+                    <a class="pink-try-button" href="https://estellio.github.io/weather/" target="_blank">Click here to try</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Books project</h2>
+                <h3><span class="teal-text bold">Programming languages:</span> JS & HTML</h3>
+                <p>On this page you can add books to a list. All the books are stored in local storage.</p>
+                <div class="try-container">
+                    <a class="teal-try-button" href="https://estellio.github.io/oop_books/" target="_blank">Click here to try</a>
+                </div>
             </div>
         </div>
     </div>

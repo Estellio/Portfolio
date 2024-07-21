@@ -92,15 +92,8 @@ body {
     font-size: 29px;
 }
 
-#projects-btn {
-    background-color: #ea3f8c;
-    color: #ffffff;
-    border-radius: 10px;
-    letter-spacing: 1px;
-}
-
-#projects-btn:hover {
-    background-color: #c90c7d;
+#container_padding {
+    padding: 0 20px;
 }
 
 .pink-text {
@@ -160,7 +153,7 @@ h2 {
 .box {
     min-width: 450px;
     position: relative;
-    width: 840px;
+    max-width: 840px;
     border-radius: 50px;
     background-image: linear-gradient(#000000, #222222);
     border: 3px solid #222222;
@@ -169,7 +162,7 @@ h2 {
 }
 
 .box h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
@@ -208,12 +201,12 @@ a:hover {
     text-decoration: underline 2px;
 }
 
-#contact i, #contact h3 {
+#contact i, #contact h3, #gmail i, #gmail h3 {
     display: inline-block;
 }
 
-#contact i {
-    margin-right: 7px;
+#gmail {
+    margin: 40px 0;
 }
 
 .normal {
@@ -233,7 +226,11 @@ a:hover {
     padding-top: 5px;
 }
 
-@media only screen and (max-device-width: 580px) {
+@media only screen and (max-width: 660px) {
+    #container_padding {
+        padding: 0 10px;
+    }
+
     #profile {
         margin-top: 140px;
     }
@@ -279,5 +276,46 @@ a:hover {
 
     #contact-info {
         font-size: 1.6rem;
+    }
+}
+
+/* Navigation bar phone view */
+@media only screen and (max-width: 900px) {
+    #nav-bar {
+        height: 100px;
+    }
+
+    #homepage_btn a {
+        font-size: 34px;
+    }
+
+    #menu_icon {
+        display: block;
+        margin-right: 60px;
+        color: #ffffff;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 1);
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+        top: 100px;
+    }
+
+    .active a {
+        padding: 40px 0;
+        font-size: 40px !important;
+        font-weight: 600;
+        margin-right: 0 !important;
     }
 }

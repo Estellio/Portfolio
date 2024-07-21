@@ -89,6 +89,10 @@ a {
     transform: translate3d(0, 0.2em, 0);
 }
 
+.container_padding {
+    padding: 0 20px;
+}
+
 #header {
     text-align: center;
     margin-top: 90px;
@@ -155,6 +159,10 @@ a {
     font-weight: 600;
 }
 
+.teal-try-button:hover {
+    background-color: #24A875;
+}
+
 .pink-try-button {
     text-align: center;
     background-color: #ea3f8c;
@@ -164,6 +172,10 @@ a {
     border-radius: 8px;
     letter-spacing: 1px;
     font-weight: 600;
+}
+
+.pink-try-button:hover {
+    background-color: #DC1871;
 }
 
 #github a {
@@ -204,12 +216,8 @@ a {
     padding-left: 10px;
 }
 
-#link:hover {
-    background-color: #73fe1f;
-}
-
 button {
-    background-color: #8cfe48;
+    background-color: #64fe0b;
     color: inherit;
     border: none;
     padding: 0;
@@ -222,8 +230,8 @@ button {
     height: 56px;
 }
 
-button:hover {
-    background-color: #73fe1f;
+#link:hover {
+    background-color: #5af401;
 }
 
 #footer {
@@ -231,22 +239,14 @@ button:hover {
     background-color: #222222;
     padding-top: 5px;
     padding-bottom: 15px;
+    width: 100%;
 }
 
-/* Phone CSS */
-
-/*
-@media only screen and (max-device-width: 880px) {
-    #menu_icon {
-        display: block;
+@media only screen and (max-width: 600px) {
+    .container_padding {
+        padding: 0 10px;
     }
-    #navigation_btns {
-        display: none;
-    }
-}
-*/
 
-@media only screen and (max-device-width: 500px) {
     #header {
         font-size: 1.7rem;
     }
@@ -300,6 +300,7 @@ button:hover {
     #big_git {
         display: block;
     }
+
     #small_git {
         display: none;
     }
@@ -310,5 +311,46 @@ button:hover {
 
     #footer p {
         font-size: 1.4rem;
+    }
+}
+
+/* Navigation bar phone view */
+@media only screen and (max-width: 900px) {
+    #nav-bar {
+        height: 100px;
+    }
+
+    #homepage_btn a {
+        font-size: 34px;
+    }
+
+    #menu_icon {
+        display: block;
+        margin-right: 60px;
+        color: #ffffff;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 1);
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+        top: 100px;
+    }
+
+    .active a {
+        padding: 40px 0;
+        font-size: 40px !important;
+        font-weight: 600;
+        margin-right: 0 !important;
     }
 }

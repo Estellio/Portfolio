@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <script src="rain_bg.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style(rain).css">
     <link rel="stylesheet" href="css/style(index).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +23,25 @@
 
     <div id="nav-bar">
         <div id="homepage_btn">
-            <a href="index.html">Welcome to my <span class="teal-text">Portfolio</span></a>
+            <a href="index.html"><span class="invisible">Welcome to my </span><span class="teal-text">Portfolio</span></a>
         </div>
-        <div id="navigation_btns">
+        <div id="navigation_btns" class="invisible">
             <a href="my-projects.html">Projects</a>
             <a href="about-me.html">About Me</a>
-            <a href="about-me.html#contact">Contact</a>
+            <a href="about-me.html#contact" id="contact_nav">Contact</a>
         </div>
-        <i class="fa-solid fa-bars" id="menu_icon"></i>
+        <i class="fa-solid fa-bars fa-2xl" id="menu_icon"></i>
     </div>
+    <script>
+        const barsIcon = document.getElementById("menu_icon");
+        const navButtons = document.getElementById("navigation_btns");
 
+        barsIcon.addEventListener("click", () => {
+            navButtons.classList.toggle("active")
+        });
+    </script>
+
+    <div id="container_padding">
     <div id="info">
         <div id="intro">
             <h2>Hi, I am</h2>
@@ -41,6 +51,7 @@
             </h2>
             <a href="about-me.html" id="abt_me_btn">More about Me <i class="fa-solid fa-chevron-right"></i></a>
         </div>
+    </div>
     </div>
 
     <div id="footer">
