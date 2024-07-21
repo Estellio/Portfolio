@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100vw;
     background: #000;
     height: 100%;
     overflow: hidden;
@@ -176,42 +177,44 @@ a {
 
     #info {
         margin: 100px 10px;
+        border-radius: 40px;
     }
 
     #intro {
         max-width: 780px;
-        min-width: 600px;
-        margin-right: 50px;
+        margin-left: 0;
+        text-align: center;
     }
 
     #intro h2 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     #intro h1 {
-        font-size: 5rem;
+        font-size: 3.4rem;
     }
 
     #abt_me_btn {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         width: 280px;
         height: 70px;
+        margin: 40px auto 0;
     }
 }
 
 /* Navigation bar phone view */
 @media only screen and (max-width: 900px) {
     #nav-bar {
-        height: 100px;
+        height: 90px;
     }
 
     #homepage_btn a {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     #menu_icon {
         display: block;
-        margin-right: 60px;
+        margin-right: 50px;
         color: #ffffff;
     }
 
@@ -229,12 +232,13 @@ a {
         width: 100%;
         z-index: 10;
         position: fixed;
-        top: 100px;
+        top: 90px;
     }
 
     .active a {
-        padding: 40px 0;
-        font-size: 40px !important;
+        margin-bottom: 80px;
+        padding: 10px;
+        font-size: 36px !important;
         font-weight: 600;
         margin-right: 0 !important;
     }
